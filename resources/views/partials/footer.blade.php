@@ -1,14 +1,19 @@
 <br>
-<div class="testimonials-clean" style="background-color: #F3F9FE; margin: 0">
+<div class="testimonials-clean" style="background-color: #F3F9FE">
     <div class="container">
         <div class="row people">
             <div class="col-md-6 col-lg-4 item">
                 <div class="container">
                     <a class="navbar-brand" href="/">
                         <img src="./imgs/NAELE.png" alt="image logo" class="image_logo">
-                    </a>
+                    </a><br><br>
+                    <a href="" target="_blank"><img src="./imgs/logo-facebook.png" alt="image logo" class="image_logo"></a>
+                    <a><img src="./imgs/insta_logo.png" alt="image logo" class="image_logo"></a>
+                    <a><img src="./imgs/twiiter_logo.png" alt="image logo" class="image_logo"></a>
+                    <a><img src="./imgs/linkedin.png" alt="image logo" class="image_logo"></a>
                 </div>
-            </div>                 <div class="col-md-6 col-lg-4 item">
+            </div>
+            <div class="col-md-6 col-lg-4 item">
                 <div class="container">
                     <ul>
                         <li><h4>A Propos :</h4></li>
@@ -29,15 +34,6 @@
                         <li>NE- Max</li>
                         <li>NE- Découvert</li>
                     </ul>
-                </div>
-            </div>
-            <div class="card text-center" style="background-color: #59B0E3">
-                <div class="card-body">
-                    <a href="" target="_blank"><img src="./imgs/logo-facebook.png" alt="image logo" class="image_logo"></a>
-                    <a><img src="./imgs/insta_logo.png" alt="image logo" class="image_logo"></a>
-
-                    <a><img src="./imgs/twiiter_logo.png" alt="image logo" class="image_logo"></a>
-                    <a><img src="./imgs/linkedin.png" alt="image logo" class="image_logo"></a>
                 </div>
             </div>
         </div>

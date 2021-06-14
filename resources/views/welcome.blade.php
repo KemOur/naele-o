@@ -54,6 +54,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <br>
         <br>
         <br>
@@ -139,6 +140,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col">
                         <div class="card">
                             <img src="./imgs/d.png" class="card-img-top" alt="..." style="height: 35vh">
@@ -156,5 +158,6 @@
             </div>
         </div>
         <br>
+    </div>
         @include('partials.comments')<br>
 @include('partials.footer')

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2785574f-4d84-4e6b-bbe6-78070d5727c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ActualityContoller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1623770072-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1623770979-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1623771019-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1623771048-.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/actus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +207,7 @@
       <workItem from="1623680833616" duration="13444000" />
       <workItem from="1623700591967" duration="4618000" />
       <workItem from="1623741649567" duration="22760000" />
-      <workItem from="1623792416940" duration="359000" />
+      <workItem from="1623792416940" duration="929000" />
     </task>
     <servers />
   </component>

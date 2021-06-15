@@ -9,7 +9,7 @@
             <ul class="navbar-nav me-auto mb-0 mb-lg-10 bg-white ">
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/histoire">À propos</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/services">Services NE</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/actualites">Actualités</a> </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/actus">Actualités</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/contact">Contact</a> </li>
 
             @if (auth()->check() && auth()->user()->id)

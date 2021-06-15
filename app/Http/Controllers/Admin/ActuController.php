@@ -168,4 +168,5 @@ class ActuController extends Controller
         return redirect('admin/actus')->with('success', 'L actualité à bien été supprimé !');
 
     }
+
 }

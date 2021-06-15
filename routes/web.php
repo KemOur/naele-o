@@ -22,7 +22,7 @@ require __DIR__.'/auth.php';
 //all
 Route::get('/', function () { return view('welcome'); });
 Route::get('/histoire', function () { return view('about'); });
-Route::get('/actualites', function () { return view('actus'); });
+//Route::get('/actualites', function () { return view('actus'); });
 Route::get('/services', function () { return view('services'); });
 Route::get('/contact', function () { return view('contact'); });
 
@@ -32,8 +32,10 @@ Route::get('/abonnement', function () { return view('userabonnements'); });
 Route::get('/confirmation', function () { return view('confirmationabonnements'); });
 Route::get('/factures', function () { return view('userfactures'); });
 
-
 Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profile' ]) ->name('profile');
+//search actualitys
+Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'index' ]) ->name('route.index');
+Route::get('actus/search', [\App\Http\Controllers\ActualityContoller::class, 'search' ]) ->name('route.search');
 
 
 Route::group(['middleware' => 'auth'], function (){

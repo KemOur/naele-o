@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2785574f-4d84-4e6b-bbe6-78070d5727c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ActualityContoller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/1623770072-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/1623770979-.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/1623771019-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/1623771048-.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/actus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/actus.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +215,8 @@
       <workItem from="1623625780377" duration="17838000" />
       <workItem from="1623680833616" duration="13444000" />
       <workItem from="1623700591967" duration="4618000" />
-      <workItem from="1623741649567" duration="20189000" />
+      <workItem from="1623741649567" duration="22760000" />
+      <workItem from="1623792416940" duration="359000" />
     </task>
     <servers />
   </component>
@@ -231,10 +239,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="482" y="28" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.813@0.25.1440.813" timestamp="1623703749527" />
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623765931438">
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623770664508">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1623765931438" />
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1623770664508" />
     <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1622909675864">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -251,13 +259,13 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1622909675863" />
-    <state x="808" y="252" key="NewPhpClassDialog" timestamp="1623647793684">
+    <state x="808" y="252" key="NewPhpClassDialog" timestamp="1623770797942">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="808" y="252" key="NewPhpClassDialog/0.25.1440.813@0.25.1440.813" timestamp="1623647793684" />
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1623741659562">
+    <state x="808" y="252" key="NewPhpClassDialog/0.25.1440.813@0.25.1440.813" timestamp="1623770797942" />
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1623792426155">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1623741659562" />
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1623792426155" />
   </component>
 </project>

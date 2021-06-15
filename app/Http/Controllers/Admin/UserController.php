@@ -68,9 +68,7 @@ class UserController extends Controller
             'email' => $request-> email,
         ]);
         return redirect('admin/users')->with('success', 'Les informations on été changé avec succés');
-
     }
-
 
     public function destroy($id)
     {

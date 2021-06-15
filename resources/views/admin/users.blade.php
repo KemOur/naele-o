@@ -9,7 +9,10 @@
     @endif
     <div class="my-3 p-3 bg-body rounded shadow-sm">
         <h6 class="border-bottom pb-2 mb-0">Liste des utilisateurs</h6>
-        <div class="d-flex justify-content-between" style="text-align: right"> <a href="users/create">Ajouter</a> </div><hr>
+        <div class="d-flex justify-content-between" style="text-align: right">
+            <a href="users/create">Ajouter</a>
+        </div>
+        <hr>
 
         @foreach ($users as $user)
         <div class="d-flex text-muted pt-3">
@@ -19,7 +22,6 @@
                     <strong class="text-gray-dark"><small>Name</small> :{{ $user->name }}</strong>
                     <div style="text-align: right">
                         <a href="{{route('admin.users.editUser', $user->id )}}">Modifier</a>
-
                         <form action="{{route('admin.users.destroy', $user->id)}}" method="post">
                             @csrf
                             @method('delete')
@@ -31,7 +33,6 @@
             </div>
         </div>
         @endforeach
-
     </div>
     </div>
 @endsection

@@ -1,6 +1,5 @@
 @extends('layouts.main')
 @section('content')
-
 <h2 class="text-center">Actualités</h2>
 <br>
 <h5 style="text-align: center; font-size: 2vh">Chaque semaine, des sorties et des contenus qui vous accompagnent dans vos trajets.</h5>

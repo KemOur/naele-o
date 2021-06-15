@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light " style="height: 70px">
     <div class="container">
 
-        <a class="navbar-brand" href="/"><img src="../../imgs/NAELE.png" alt="image logo" class="image_logo"></a>
+        <a class="navbar-brand" href="/"><img src="/imgs/NAELE.png" alt="Naele" class="image_logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,7 +11,6 @@
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/services">Services NE</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/actualites">Actualités</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/contact">Contact</a> </li>
-
 
             @if (auth()->check() && auth()->user()->id)
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/profile" style="text-decoration: underline">{{auth()->user()->name}}</a> </li>
@@ -24,18 +23,8 @@
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/admin/users" style="color: #59B0E3">USERS</a> </li>
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/admin/actus" style="color: #59B0E3">ACTUALITES</a> </li>
                 @endif
-
             </ul>
 
-            <!--
-            <ul class="list-group">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-              <li class="list-group-item">A fourth item</li>
-              <li class="list-group-item">And a fifth one</li>
-            </ul>
-            -->
             <form class="d-flex">
                 <input type="search" class="form-control" placeholder="actualités..." aria-label="Search">
                 <button class="btn btn-outline-secondary" type="submit" id="button-addon2">

@@ -14,6 +14,7 @@
         </div>
         <hr>
 
+        @if($users->isNotEmpty())
         @foreach ($users as $user)
         <div class="d-flex text-muted pt-3">
             <div>#</div>
@@ -34,6 +35,9 @@
             </div>
         </div>
         @endforeach
+        @else
+            <li>There is no user in database</li>
+        @endif
     </div>
     </div>
 @endsection

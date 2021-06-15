@@ -11,6 +11,7 @@
         <h6 class="border-bottom pb-2 mb-0">Liste des actualités</h6>
         <div class="d-flex justify-content-between" style="text-align: right"> <a href="actus/create">Ajouter</a> </div><hr>
 
+        @if($actus->isNotEmpty())
         @foreach ($actus as $actu)
             <div class="d-flex text-muted pt-3">
                 <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
@@ -37,6 +38,9 @@
                 </div>
             </div>
         @endforeach
+        @else
+            <li>There is no news in database</li>
+        @endif
     </div>
 </div>
 @endsection

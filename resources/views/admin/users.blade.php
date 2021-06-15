@@ -22,7 +22,8 @@
                     <strong class="text-gray-dark"><small>Name</small> :{{ $user->name }}</strong>
                     <div style="text-align: right">
                         <a href="{{route('admin.users.editUser', $user->id )}}">Modifier</a>
-                        <form action="{{route('admin.users.destroy', $user->id)}}" method="post">
+
+                        <form action="{{route('admin.users.destroy', $user->id)}}" method="DELETE">
                             @csrf
                             @method('delete')
                             <button onclick="return confirm('Vous êtes sûr ?')" type="submit">Suprimer</button>

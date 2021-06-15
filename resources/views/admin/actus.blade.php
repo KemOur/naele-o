@@ -25,10 +25,10 @@
                             <a href="{{route('admin.actus.edit', $actu->id )}}">Modifier</a>
                             <br>
                             <br>
-                            <form action="" method="post">
+                            <form action="{{route('admin.actus.destroy', $actu->id)}}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button onclick="return confirm('Vous êtes sûr ?')" type="submit">Suprimer</button>
+                                <button onclick="return confirm('Êtes vous sûr de vouloir supprimer cet élement ?')" type="submit">Suprimer</button>
                             </form>
                         </div>
 

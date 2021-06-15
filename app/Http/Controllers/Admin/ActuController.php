@@ -150,11 +150,14 @@ class ActuController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Actu  $actu
+     * @param  \App\Models\Actu  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Actu $actu)
+    public function destroy($id)
     {
-        //
+        $actu = Actu::find($id);
+        $actu ->delete();
+        return redirect('admin/actus')->with('success', 'L actualité à bien été supprimé !');
+
     }
 }

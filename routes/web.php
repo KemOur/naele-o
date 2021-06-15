@@ -48,7 +48,6 @@ Route::group(['middleware' => 'auth'], function (){
         Route::post('users/store', [\App\Http\Controllers\Admin\UserController::class, 'store' ]) ->name('users.store');
         Route::get('users/edit/{id}', [\App\Http\Controllers\Admin\UserController::class, 'editUser' ]) ->name('users.editUser');
         Route::put('users/edit/{id}', [\App\Http\Controllers\Admin\UserController::class, 'update' ]) ->name('users.update');
-
         Route::delete('users/{id}', [\App\Http\Controllers\Admin\UserController::class, 'destroy']) ->name('users.destroy');
         //Actus
         Route::get('actus', [\App\Http\Controllers\Admin\ActuController::class, 'index' ]) ->name('route.index');
@@ -56,6 +55,7 @@ Route::group(['middleware' => 'auth'], function (){
         Route::post('actus/store', [\App\Http\Controllers\Admin\ActuController::class, 'store' ]) ->name('actus.store');
         Route::get('actus/edit/{id}', [\App\Http\Controllers\Admin\ActuController::class, 'edit' ]) ->name('actus.edit');
         Route::put('actus/edit/{id}', [\App\Http\Controllers\Admin\ActuController::class, 'update' ]) ->name('actus.update');
+        Route::delete('actus/{id}', [\App\Http\Controllers\Admin\ActuController::class, 'destroy' ]) ->name('actus.destroy');
 
     });
 });

@@ -2,45 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2785574f-4d84-4e6b-bbe6-78070d5727c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/IsAdminMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_13_174742_add_is_admin_to_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/abonnementForm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/abonnementList.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/aboutForm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/aboutList.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/actuForm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/actuList.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/editUser.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/userForm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/services.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/App/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sanctum-dantin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sanctum-dantin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Actu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_14_210533_create_actus_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminuser.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/connection.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forfaits.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/inscription.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/comments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/actus.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/actuList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/actus.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +222,9 @@
       <workItem from="1623619887676" duration="129000" />
       <workItem from="1623621401001" duration="596000" />
       <workItem from="1623625780377" duration="17838000" />
-      <workItem from="1623680833616" duration="13177000" />
+      <workItem from="1623680833616" duration="13444000" />
+      <workItem from="1623700591967" duration="4618000" />
+      <workItem from="1623741649567" duration="2795000" />
     </task>
     <servers />
   </component>
@@ -261,10 +243,14 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="443" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.813@0.25.1440.813" timestamp="1622913152094" />
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623647745152">
+    <state x="482" y="28" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623703749527">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1623647745152" />
+    <state x="482" y="28" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.813@0.25.1440.813" timestamp="1623703749527" />
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623705339970">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1623705339970" />
     <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1622909675864">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -285,9 +271,9 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="808" y="252" key="NewPhpClassDialog/0.25.1440.813@0.25.1440.813" timestamp="1623647793684" />
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1623680854478">
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1623741659562">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1623680854478" />
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1623741659562" />
   </component>
 </project>

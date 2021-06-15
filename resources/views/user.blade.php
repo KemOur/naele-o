@@ -1,7 +1,5 @@
-@include("partials.header")
-<br>
-<br>
-<br>
+@extends('layouts.main')
+@section('content')
 
 <div class="testimonials-clean" >
     <div class="container" >
@@ -46,4 +44,4 @@
 </div>
     <br>
     <br>
-@include("partials.footer")
+@endsection

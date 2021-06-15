@@ -1,4 +1,6 @@
-@include("partials.header")
+@extends('layouts.main')
+
+@section('content')
 <div>
     <h2 class="text-center">À propos de <span style="color: #59B0E3">NAELE</span></h2>
     <br>
@@ -177,6 +179,4 @@
 <br>
 <br>
 <br>
-@include("partials.comments")
-<br>
-@include("partials.footer")
+@endsection

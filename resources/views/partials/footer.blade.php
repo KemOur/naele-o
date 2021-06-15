@@ -5,12 +5,12 @@
             <div class="col-md-6 col-lg-4 item">
                 <div class="container">
                     <a class="navbar-brand" href="/">
-                        <img src="./imgs/NAELE.png" alt="image logo" class="image_logo">
+                        <img src="/imgs/NAELE.png" alt="image logo" class="image_logo">
                     </a><br><br>
-                    <a href="" target="_blank"><img src="./imgs/logo-facebook.png" alt="image logo" class="image_logo"></a>
-                    <a><img src="./imgs/insta_logo.png" alt="image logo" class="image_logo"></a>
-                    <a><img src="./imgs/twiiter_logo.png" alt="image logo" class="image_logo"></a>
-                    <a><img src="./imgs/linkedin.png" alt="image logo" class="image_logo"></a>
+                    <a href="" target="_blank"><img src="/imgs/logo-facebook.png" alt="image logo" class="image_logo"></a>
+                    <a><img src="/imgs/insta_logo.png" alt="image logo" class="image_logo"></a>
+                    <a><img src="/imgs/twiiter_logo.png" alt="image logo" class="image_logo"></a>
+                    <a><img src="/imgs/linkedin.png" alt="image logo" class="image_logo"></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">

@@ -1,9 +1,9 @@
-@include("partials.header")
-<h2 class="text-center">Contactez-nous</h2>
+@extends('layouts.main')
+@section('content')
+    <h2 class="text-center">Contactez-nous</h2>
 <br>
 <br>
 <br>
-
 
 <div class="p-5 mb-4 bg-light rounded-3" style="margin-left: 25%;margin-right: 25%">
     <h5>Tous les champs sont obligatoires :)</h5>
@@ -49,5 +49,4 @@
     <li>Adresse : 18 quai jean baptiste clément, 94140, Alfortville</li>
 </ul>
 </div>
-@include("partials.comments")
-@include("partials.footer")
+@endsection

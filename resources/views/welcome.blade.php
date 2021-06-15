@@ -1,12 +1,12 @@
-@include('partials.header')
-<div class="#"> <h3 style="font-family: Skia" class="text-center">Nous sommes déjà 40 000 à utiliser NAELE au quotidient</h3> </div>
+@extends('layouts.main')
+@section('content')
+    <div class="#"> <h3 style="font-family: Skia" class="text-center">Nous sommes déjà 40 000 à utiliser NAELE au quotidient</h3> </div>
 
 <div class="#" style="height: 90vh">
     <img src="./imgs/2home.png" alt="image logo" class="image_logo" style="width: 100vw; height: 80vh">
 </div>
 <br>
 <br>
-
 <div class="container">
     <div style="height: 60vh">
         <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 10%;margin-right: 10%">
@@ -55,7 +55,6 @@
             </div>
         </div>
         </div>
-        <br>
         <br>
         <br>
 
@@ -160,4 +159,4 @@
         <br>
     </div>
         @include('partials.comments')<br>
-@include('partials.footer')
+@endsection

@@ -1,7 +1,7 @@
-@include("partials.header")
+@extends('layouts.main')
+@section('content')
 <br>
-<br>
-<br>
+
 <h2 class="text-center">Forfaits Navigo- Electrique</h2>
 <br>
 <div class="testimonials-clean">
@@ -107,5 +107,5 @@
         </div>
     </div>
 </div>
-@include("partials.comments")
-@include("partials.footer")
+@include('partials.comments')<br>
+@endsection

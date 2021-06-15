@@ -49,6 +49,9 @@ Route::group(['middleware' => 'auth'], function (){
         Route::get('users/edit/{id}', [\App\Http\Controllers\Admin\UserController::class, 'editUser' ]) ->name('users.editUser');
         Route::put('users/edit/{id}', [\App\Http\Controllers\Admin\UserController::class, 'update' ]) ->name('users.update');
         Route::delete('users/{id}', [\App\Http\Controllers\Admin\UserController::class, 'destroy']) ->name('users.destroy');
+        //Actus
+        Route::get('actus', [\App\Http\Controllers\Admin\ActuController::class, 'index' ]) ->name('route.index');
+
     });
 });
 

@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Naele</title>
-    <style>
-
-
-    </style>
-</head>
-<body class="antialiased">
 <nav class="navbar navbar-expand-lg navbar-light " style="height: 70px">
     <div class="container">
 
-        <a class="navbar-brand" href="/"><img src="./imgs/NAELE.png" alt="image logo" class="image_logo"></a>
+        <a class="navbar-brand" href="/"><img src="../../imgs/NAELE.png" alt="image logo" class="image_logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,17 +10,19 @@
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/histoire">À propos</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/services">Services NE</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/actualites">Actualités</a> </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/contact">Contact</a> </li>
 
-                @if (auth()->check() && auth()->user()->id)
-                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/profile"  style="text-decoration: underline; text-underline-offset: 5px; text-decoration-color: #1a202c; ">{{auth()->user()->name}}</a> </li>
-                    @else
+
+            @if (auth()->check() && auth()->user()->id)
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/profile" style="text-decoration: underline">{{auth()->user()->name}}</a> </li>
+                @else
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/login" style="text-decoration: underline; text-underline-offset: 5px; text-decoration-color: #59B0E3; ">Me connecter</a>
                     </li>
                 @endif
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/contact">Contact</a> </li>
                 @if (auth()->check() && auth()->user()->is_admin == 1)
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/admin/users" style="color: #59B0E3">USERS</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/admin/actus" style="color: #59B0E3">ACTUALITES</a> </li>
                 @endif
 
             </ul>
@@ -60,8 +47,5 @@
         </div>
     </div>
 </nav>
+<div class="#"> <img src="/imgs/home-image.png" alt="image logo" class="image_logo" style="width: 100vw; height: 65vh "> </div>
 
-<div class="#"> <img src="./imgs/home-image.png" alt="image logo" class="image_logo" style="width: 100vw; height: 65vh "> </div>
-<br>
-<br>
-<br>

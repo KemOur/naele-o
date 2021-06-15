@@ -1,4 +1,5 @@
-@include("partials.header")
+@extends('layouts.main')
+@section('content')
 
 <h2 class="text-center">Actualités</h2>
 <br>
@@ -127,4 +128,5 @@
         </div>
     </div>
 </div>
-@include("partials.footer")
+@include('partials.comments')<br>
+@endsection

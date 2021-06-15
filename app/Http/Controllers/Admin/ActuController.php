@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Actu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+
 use Illuminate\Support\Facades\Hash;
 
 class ActuController extends Controller
@@ -156,6 +158,12 @@ class ActuController extends Controller
     public function destroy($id)
     {
         $actu = Actu::find($id);
+        if (File::exists(public_path("imgs/{$actu->image}"))) {
+            File::delete(public_path("imgs/{$actu->image}"));
+        }else{
+            dd('File does not exists');
+        }
+        //dd($actu->image);
         $actu ->delete();
         return redirect('admin/actus')->with('success', 'L actualité à bien été supprimé !');
 

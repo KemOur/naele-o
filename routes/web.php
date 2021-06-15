@@ -69,19 +69,3 @@ Route::group(['middleware' => 'auth'], function (){
 
      });
 });
-
-
-
-//admin routes
-
-//Route::get('/crudabonnemntf', function () { return view('admin/abonnementForm'); });
-//Route::get('/crudabonnemnt', function () { return view('admin/abonnementList'); });
-//Route::get('/crudaboutf', function () { return view('admin/aboutForm'); });
-//Route::get('/crudabout', function () { return view('admin/aboutList'); });
-
-//Route::get('/crudactuf', function () { return view('admin/actuForm'); });
-//Route::get('/crudactu', function () { return view('admin/actuList'); });
-
-//Route::get('/cruduserf', function () { return view('admin/userForm'); });
-//Route::get('/cruduser', function () { return view('admin/userList'); });
-

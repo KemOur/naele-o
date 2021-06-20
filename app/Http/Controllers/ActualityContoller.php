@@ -18,15 +18,16 @@ class ActualityContoller extends Controller
     //search
     public function search(Request $request){
         // Get the search value from the request
-        $search = $request->input('search');
+        //$actus = $request->input('search');
+        $actus = $request->input('actus');
 
         // Search in the title and body columns from the posts table
-        $posts = Actu::query()
-            ->where('title', 'LIKE', "%{$search}%")
-            ->orWhere('content', 'LIKE', "%{$search}%")
+        $actus = Actu::query()
+            ->where('title', 'LIKE', "%{$actus}%")
+            ->orWhere('content', 'LIKE', "%{$actus}%")
             ->get();
 
-        // Return the search view with the resluts compacted
-        return view('actus', compact('posts'));
+        // Return the search view with the results compacted
+        return view('actus', compact('actus'));
     }
 }

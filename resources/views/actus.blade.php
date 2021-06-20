@@ -10,7 +10,6 @@
 <br>
 <div class="container">
     <div class="" style="margin-left: 5%;margin-right: 5%">
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
         @if($actus->isNotEmpty())
 
@@ -24,8 +23,8 @@
                         {{ $actu->content }}
                     </p>
                     <div>
-                        <a href="">Lire la suite</a>
-                        <p class="float-center" style="text-align: right">20/20/2021</p>
+                        <a href="{{route('route.detail', $actu->id )}}">Lire la suite</a>
+                        <p class="float-center" style="text-align: right">{{ $actu->created_at->diffForHumans() }}</p>
                     </div>
                 </div>
             </div>
@@ -36,7 +35,6 @@
                 <p> Nous n'avons pas de resultats pour cette actulités !</p>
             </div>
         @endif
-
     </div>
     </div>
 </div>

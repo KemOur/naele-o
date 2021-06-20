@@ -64,6 +64,7 @@ class ActuController extends Controller
 
         $request->validate([
             'title' => 'required|string|max:255',
+            'resume' => 'required',
             'content' => 'required',
             'image' => 'required|mimes:jpg,png,jpeg|max:5048',
         ]);
@@ -75,6 +76,7 @@ class ActuController extends Controller
 
         $actu = Actu::create([
             'title' => $request->input('title'),
+            'resume' => $request->input('resume'),
             'content' => $request->input('content'),
             'image' => $newImageName
         ]);
@@ -116,10 +118,10 @@ class ActuController extends Controller
      */
         public function update(Request $request, $id)
     {
-
         //dd($request->image);
         $request->validate([
             'title' => 'required|string|max:255',
+            'resume' => 'required',
             'content' => 'required',
             'image' => '|mimes:jpg,png,jpeg|max:5048',
         ]);
@@ -128,6 +130,7 @@ class ActuController extends Controller
             $actu = Actu::find($id);
             $actu->update([
                 'title' => $request->input('title'),
+                'resume' => $request->input('resume'),
                 'content' => $request->input('content'),
             ]);
 
@@ -141,12 +144,11 @@ class ActuController extends Controller
             $actu = Actu::find($id);
             $actu->update([
                 'title' => $request->input('title'),
+                'resume' => $request->input('resume'),
                 'content' => $request->input('content'),
                 'image' => $newImageName
         ]);
-
         return redirect('admin/actus')->with('success', 'Les informations on été changé avec succés');
-
     }
 
     /**

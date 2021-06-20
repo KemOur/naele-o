@@ -6,6 +6,7 @@
             <form method="POST" action="{{ route('admin.actus.update', $actu->id) }}"  enctype="multipart/form-data">
                 @csrf
                 @method('put')
+
                 <x-label for="title" :value="__('Title')" />
                 <x-input
                     id="title"
@@ -15,6 +16,19 @@
                     value="{{$actu->title}}"
                     required autofocus/>
                 @error('title')
+                {{$message}}
+                @enderror
+                <br>
+
+                <x-label for="resume" :value="__('Résumé')" />
+                <x-input
+                    id="resume"
+                    class="block mt-1 w-full"
+                    type="text"
+                    name="resume"
+                    value="{{$actu->resume}}"
+                    required autofocus/>
+                @error('resume')
                 {{$message}}
                 @enderror
                 <br>

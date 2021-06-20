@@ -13,6 +13,15 @@
                 <x-label for="title" :value="__('Title')" />
                 <x-input id="title" class="block mt-1 w-full" type="text" name="title" :value="old('title')" required autofocus/>
                 <br>
+                @error('title')
+                {{$message}}
+                @enderror
+                <x-label for="resume" :value="__('Résumé de lactu')" />
+                <x-input id="resume" class="block mt-1 w-full" type="text" name="resume" :value="old('resume')" required autofocus/>
+                <br>
+                @error('resume')
+                {{$message}}
+                @enderror
 
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Image</label>
@@ -22,6 +31,9 @@
                         type="file"
                         id="formFile">
                 </div>
+                @error('image')
+                {{$message}}
+                @enderror
                 <div class="form-floating">
                     <x-label for="actu" :value="__('Actualités :')" />
                     <x-input
@@ -32,6 +44,9 @@
                         :value="old('content')" required autofocus/>
                     <br>
                 </div>
+                @error('actu')
+                {{$message}}
+                @enderror
                 <br>
                 <label>Publier ?</label>
                 <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="true" aria-label="...">

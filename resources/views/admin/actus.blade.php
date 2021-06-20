@@ -18,6 +18,7 @@
                     <div class="d-flex justify-content-between">
                         <ul>
                             <li><strong class="text-gray-dark">{{ $actu->title }}</strong> </li><br>
+                            <li><strong class="text-gray-dark">{{ $actu->resume }}</strong> </li><br><br>
                             <li><strong class="text-gray-dark">{{ $actu->content }}</strong> </li>
                         </ul>
                                 <img src="{{asset('imgs/' . $actu->image)}}" class="card-img-top" alt="..." style="height: 50px;width: 50px">

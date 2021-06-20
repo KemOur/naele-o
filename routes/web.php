@@ -37,6 +37,7 @@ Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profi
 Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'index' ]) ->name('route.index');
 //Route::get('/search/', 'PostsController@search')->name('search');
 Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'search' ]) ->name('route.search');
+Route::get('actudetail/{id}', [\App\Http\Controllers\ActualityContoller::class, 'detail' ]) ->name('route.detail');
 
 
 Route::group(['middleware' => 'auth'], function (){

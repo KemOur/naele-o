@@ -17,6 +17,9 @@
                                     <p class="card-text">
                                         {{ $actu->resume }}
                                     </p>
+                                    <p class="card-text">
+                                        {{ $actu->content }}
+                                    </p>
                                     <div>
                                         <p class="float-center" style="text-align: right">{{ $actu->created_at->diffForHumans() }}</p>
                                     </div>

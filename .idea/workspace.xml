@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2785574f-4d84-4e6b-bbe6-78070d5727c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_20_132418_add_resume_to_actus_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1624198855-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1624199046-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1624199063-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1624199155-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imgs/1624199317-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/actudetail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ContactRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/ContactMe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_20_155050_create_contact_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_20_175809_add_message_to_contact_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/contact-me.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ActualityContoller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ActualityContoller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Actu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Actu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/actus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/actuForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/actuForm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/editActu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/editActu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/actudetail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/actudetail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +222,8 @@
       <workItem from="1623796029754" duration="434000" />
       <workItem from="1623929030282" duration="1263000" />
       <workItem from="1624115171455" duration="843000" />
-      <workItem from="1624131516918" duration="6848000" />
+      <workItem from="1624131516918" duration="7404000" />
+      <workItem from="1624203213288" duration="9846000" />
     </task>
     <servers />
   </component>
@@ -248,10 +246,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="482" y="28" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.813@0.25.1440.813" timestamp="1623703749527" />
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623770664508">
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624205858406">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1623770664508" />
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1624205858406" />
     <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1622909675864">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -272,6 +270,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="808" y="252" key="NewPhpClassDialog/0.25.1440.813@0.25.1440.813" timestamp="1623770797942" />
+    <state x="541" y="359" key="NewPhpFileDialog" timestamp="1624209584272">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="541" y="359" key="NewPhpFileDialog/0.25.1440.813@0.25.1440.813" timestamp="1624209584271" />
     <state width="595" height="445" key="SwitcherDM" timestamp="1624197079956">
       <screen x="0" y="25" width="1440" height="813" />
     </state>

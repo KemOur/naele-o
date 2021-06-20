@@ -24,7 +24,9 @@ Route::get('/', function () { return view('welcome'); });
 Route::get('/histoire', function () { return view('about'); });
 //Route::get('/actualites', function () { return view('actus'); });
 Route::get('/services', function () { return view('services'); });
-Route::get('/contact', function () { return view('contact'); });
+//Route::get('/contact', function () { return view('contact'); });
+Route::get('contact', [\App\Http\Controllers\ContactController::class, 'index' ]) ->name('index');
+Route::post('contact', [\App\Http\Controllers\ContactController::class, 'store' ]) ->name('store');
 
 //user
 Route::get('/profil', function () { return view('user'); });

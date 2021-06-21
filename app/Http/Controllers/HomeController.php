@@ -15,8 +15,5 @@ class HomeController extends Controller
     {
         $actus = Actu::latest()->take(3)->get();
         return view('welcome', compact('actus'));
-
-        //$dogs = Dogs::latest()->take(5)->get();
-
     }
 }

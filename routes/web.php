@@ -38,10 +38,11 @@ Route::get('/abonnement', function () { return view('userabonnements'); });
 Route::get('/confirmation', function () { return view('confirmationabonnements'); });
 Route::get('/factures', function () { return view('userfactures'); });
 
+//User profil
 Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profile' ]) ->name('profile');
+
 //search actualitys
 Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'index' ]) ->name('route.index');
-//Route::get('/search/', 'PostsController@search')->name('search');
 Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'search' ]) ->name('route.search');
 Route::get('actudetail/{id}', [\App\Http\Controllers\ActualityContoller::class, 'detail' ]) ->name('route.detail');
 

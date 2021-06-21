@@ -20,9 +20,14 @@ class UserController extends Controller
 
     public function profile()
     {
-        return view('user');
-
+        if (Auth::user()){
+            return view('user');
+        }else{
+            return view('auth.login');
+        }
     }
+
+
 
     public function userForm()
     {

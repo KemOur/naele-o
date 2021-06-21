@@ -20,7 +20,11 @@ Route::get('/checkout', '\App\Http\Controllers\CheckoutController@index');
 require __DIR__.'/auth.php';
 
 //all
-Route::get('/', function () { return view('welcome'); });
+//Route::get('/', function () { return view('welcome'); });
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index' ]) ->name('index');
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'lastactus' ]) ->name('lastactus');
+
+
 Route::get('/histoire', function () { return view('about'); });
 //Route::get('/actualites', function () { return view('actus'); });
 Route::get('/services', function () { return view('services'); });

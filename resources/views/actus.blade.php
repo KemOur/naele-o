@@ -20,7 +20,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $actu->title }}</h5>
                     <p class="card-text">
-                        {{ $actu->content }}
+                        {{ $actu->resume }}
                     </p>
                     <div>
                         <a href="{{route('route.detail', $actu->id )}}">Lire la suite</a>

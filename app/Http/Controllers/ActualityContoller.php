@@ -29,4 +29,5 @@ class ActualityContoller extends Controller
         $actu = Actu::find($id);
         return view('actudetail',compact('actu'));
     }
+
 }

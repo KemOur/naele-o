@@ -127,7 +127,7 @@
                                         </p>
                                         <div>
                                             <a href="{{route('route.detail', $actu->id )}}">Lire la suite</a>
-                                            <p class="float-center" style="text-align: right">{{ $actu->created_at->diffForHumans() }}</p>
+                                            <p class="float-center" style="text-align: right">🕰 {{ $actu->created_at }}</p>
                                         </div>
                                     </div>
                                 </div>

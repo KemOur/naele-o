@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2785574f-4d84-4e6b-bbe6-78070d5727c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PlanController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Plan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_06_21_140812_create_plan_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/plans/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/plans/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/plans/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sanctum-dantin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sanctum-dantin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SubscriptionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Subscription.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/actus.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminabonnements.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/confirmationabonnements.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/plans/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/plans/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plans/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/services.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userabonnements.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userfactures.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,6 +170,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
       <recent name="$PROJECT_DIR$/public/imgs" />
@@ -238,7 +238,7 @@
       <workItem from="1624115171455" duration="843000" />
       <workItem from="1624131516918" duration="7404000" />
       <workItem from="1624203213288" duration="13037000" />
-      <workItem from="1624267087116" duration="13670000" />
+      <workItem from="1624267087116" duration="21561000" />
     </task>
     <servers />
   </component>
@@ -261,10 +261,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="482" y="28" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.813@0.25.1440.813" timestamp="1623703749527" />
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624236175313">
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624307564889">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1624236175313" />
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1624307564889" />
     <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1622909675864">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -281,10 +281,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1622909675863" />
-    <state x="808" y="252" key="NewPhpClassDialog" timestamp="1624233654709">
+    <state x="808" y="252" key="NewPhpClassDialog" timestamp="1624306739183">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="808" y="252" key="NewPhpClassDialog/0.25.1440.813@0.25.1440.813" timestamp="1624233654709" />
+    <state x="808" y="252" key="NewPhpClassDialog/0.25.1440.813@0.25.1440.813" timestamp="1624306739183" />
     <state x="541" y="359" key="NewPhpFileDialog" timestamp="1624209584272">
       <screen x="0" y="25" width="1440" height="813" />
     </state>

@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-0 mb-lg-10 bg-white ">
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/histoire">À propos</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/services">Services NE</a> </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/plans">Services NE</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/actus">Actualités</a> </li>
                 <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/contact">Contact</a> </li>
 
@@ -22,6 +22,7 @@
                 @if (auth()->check() && auth()->user()->is_admin == 1)
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/admin/users" style="color: #59B0E3">USERS</a> </li>
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/admin/actus" style="color: #59B0E3">ACTUALITES</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/admin/create/plan" style="color: #59B0E3">ABONNEMENT</a> </li>
                 @endif
             </ul>
 

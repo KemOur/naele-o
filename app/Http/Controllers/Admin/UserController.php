@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Plan;
+use App\Models\Subscription;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -18,15 +20,23 @@ class UserController extends Controller
         return view('admin.users', compact('users'));
     }
 
-    public function profile()
+    public function profile(Request $request)
     {
+
+        $userId = $request->user()->id;
+        // or $userId = Auth::id(); (Via the Auth facade)
+        // or $userId = auth()->id();
+
+        $plans = Subscription::where('user_id', $userId)->get();
+
         if (Auth::user()){
-            return view('user');
+            $plans = Plan::find($plans);
+            return view('user', compact('plans'));
         }else{
             return view('auth.login');
         }
     }
-    
+
 
     public function userForm()
     {

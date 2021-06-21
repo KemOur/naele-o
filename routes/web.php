@@ -20,40 +20,26 @@ Route::get('/checkout', '\App\Http\Controllers\CheckoutController@index');
 require __DIR__.'/auth.php';
 
 //Home
-//Route::get('/', function () { return view('welcome'); });
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index' ]) ->name('index');
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'lastactus' ]) ->name('lastactus');
 
 //About page
 Route::get('/histoire', function () { return view('about'); });
 
-//Services
-Route::get('/services', function () { return view('services'); });
 
-
-//Stripe :
+//STRIPE :
+//stripe user have to be connected, to have acces to abonnement button
+Route::get('/plans',  [\App\Http\Controllers\PlanController::class, 'index'])->name('plans.index');
 Route::group(['middleware' => 'auth'], function() {
-    Route::get('/plans',  [\App\Http\Controllers\PlanController::class, 'index'])->name('plans.index');
+    //Routes for create Plan
     Route::get('/plan/{plan}',  [\App\Http\Controllers\PlanController::class, 'show'])->name('plans.show');
     Route::post('/subscription',  [\App\Http\Controllers\SubscriptionController::class, 'create'])->name('subscription.create');
-
-    //Routes for create Plan
-    Route::get('create/plan', [\App\Http\Controllers\SubscriptionController::class, 'createPlan' ])->name('create.plan');
-    Route::post('store/plan',  [\App\Http\Controllers\SubscriptionController::class, 'storePlan'])->name('store.plan');
 });
-
-
 
 
 //Contact pages
 Route::get('contact', [\App\Http\Controllers\ContactController::class, 'index' ]) ->name('index');
 Route::post('contact', [\App\Http\Controllers\ContactController::class, 'store' ]) ->name('store');
-
-//user
-Route::get('/profil', function () { return view('user'); });
-Route::get('/abonnement', function () { return view('userabonnements'); });
-Route::get('/confirmation', function () { return view('confirmationabonnements'); });
-Route::get('/factures', function () { return view('userfactures'); });
 
 //User profil
 Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profile' ]) ->name('profile');
@@ -84,16 +70,9 @@ Route::group(['middleware' => 'auth'], function (){
         Route::get('actus/edit/{id}', [\App\Http\Controllers\Admin\ActuController::class, 'edit' ]) ->name('actus.edit');
         Route::put('actus/edit/{id}', [\App\Http\Controllers\Admin\ActuController::class, 'update' ]) ->name('actus.update');
         Route::delete('actus/{id}', [\App\Http\Controllers\Admin\ActuController::class, 'destroy' ]) ->name('actus.destroy');
-
+        //Plans
+        Route::get('create/plan', [\App\Http\Controllers\Admin\SubscriptionController::class, 'createPlan' ])->name('create.plan');
+        Route::post('store/plan',  [\App\Http\Controllers\Admin\SubscriptionController::class, 'storePlan'])->name('store.plan');
     });
 });
 
-Route::group(['middleware' => 'auth'], function (){
-    Route::group([
-        'prefix' => 'user',
-        'as' => 'user.',
-    ], function (){
-        Route::get('/', [ \App\Http\Controllers\User\UserController::class, 'index' ])->name('route.index');
-
-     });
-});

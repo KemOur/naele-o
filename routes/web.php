@@ -19,16 +19,33 @@ use Illuminate\Support\Facades\Route;
 Route::get('/checkout', '\App\Http\Controllers\CheckoutController@index');
 require __DIR__.'/auth.php';
 
-//all
+//Home
 //Route::get('/', function () { return view('welcome'); });
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index' ]) ->name('index');
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'lastactus' ]) ->name('lastactus');
 
-
+//About page
 Route::get('/histoire', function () { return view('about'); });
-//Route::get('/actualites', function () { return view('actus'); });
+
+//Services
 Route::get('/services', function () { return view('services'); });
-//Route::get('/contact', function () { return view('contact'); });
+
+
+//Stripe :
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/plans',  [\App\Http\Controllers\PlanController::class, 'index'])->name('plans.index');
+    Route::get('/plan/{plan}',  [\App\Http\Controllers\PlanController::class, 'show'])->name('plans.show');
+    Route::post('/subscription',  [\App\Http\Controllers\SubscriptionController::class, 'create'])->name('subscription.create');
+
+    //Routes for create Plan
+    Route::get('create/plan', [\App\Http\Controllers\SubscriptionController::class, 'createPlan' ])->name('create.plan');
+    Route::post('store/plan',  [\App\Http\Controllers\SubscriptionController::class, 'storePlan'])->name('store.plan');
+});
+
+
+
+
+//Contact pages
 Route::get('contact', [\App\Http\Controllers\ContactController::class, 'index' ]) ->name('index');
 Route::post('contact', [\App\Http\Controllers\ContactController::class, 'store' ]) ->name('store');
 

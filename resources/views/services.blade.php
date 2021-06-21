@@ -2,21 +2,13 @@
 @section('content')
 <br>
 
-<h2 class="text-center">Forfaits Navigo- Electrique</h2>
 <br>
-<div class="testimonials-clean">
-    <div class="container">
-        <div class="row people">
-            <div class="col-md-6 col-lg-12 item">
-                <p class="text-center" style="margin-left: 20%; margin-right: 20%; font-size: 3vh">
+
+                <p class="text-center" style="margin-left: 20%; margin-right: 20%; font-size: 2vh">
                     Ecrire des phrase citant à ou décrivant les forfaits de
                     l’entreprise en dire aux personnes de choisir ce que
                     le concerne
                 </p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="testimonials-clean" style="background-color: white; margin-left: 9%;">
     <div class="container">

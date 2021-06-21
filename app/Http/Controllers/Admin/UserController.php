@@ -26,8 +26,7 @@ class UserController extends Controller
             return view('auth.login');
         }
     }
-
-
+    
 
     public function userForm()
     {

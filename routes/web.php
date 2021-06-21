@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Acces à cette route seulement une fois connecté
-//Route::get('/', function () { return view('welcome'); })->middleware(['auth'])->name('welcome');
-
 Route::get('/checkout', '\App\Http\Controllers\CheckoutController@index');
 require __DIR__.'/auth.php';
 

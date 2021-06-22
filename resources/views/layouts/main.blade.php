@@ -15,6 +15,7 @@
 <body class="antialiased">
 @include('partials.header')
 @yield('content')
+@include('partials.comments')
 @include('partials.footer')
 @yield('scripts')
 </body>

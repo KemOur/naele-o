@@ -2,9 +2,9 @@
 
 @section('content')
 <div>
+    <br>
+    <br>
     <h2 class="text-center">À propos de <span style="color: #59B0E3">NAELE</span></h2>
-    <br>
-    <br>
     <br>
     <div class="testimonials-clean">
         <div class="container">

@@ -14,7 +14,7 @@
     <br>
     <h5 style="text-align: center">Offres abonnements </h5>
     <div class="container">
-    <div class="testimonials-clean" style="background-color: white; margin-left: 9%;">
+    <div class="testimonials-clean" style="background-color: white;">
         <div class="container">
             <div class="row people">
                 @foreach($plans as $plan)
@@ -29,7 +29,7 @@
                                         @if(auth()->check() && auth()->user()->id)
                                         <a href="{{ route('plans.show', $plan->slug) }}" class="btn btn-outline-info">Souscrire</a>
                                         @else
-                                            <span>connectez-vous pour vous abonner</span>
+                                            <p style="font-size: 1.5vh">connectez-vous pour vous abonner</p>
                                         @endif
                                     </div>
                                 </li>

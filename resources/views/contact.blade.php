@@ -24,7 +24,7 @@
     <div class="container-fluid py-5">
         <form
             method="post"
-            action="{{ route('index') }}">
+            action="{{ route('contact') }}">
             @csrf
 
             <div class="mb-3">

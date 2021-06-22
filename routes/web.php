@@ -22,7 +22,7 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index' ]) ->name(
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'lastactus' ]) ->name('lastactus');
 
 //About page
-Route::get('/histoire', function () { return view('about'); });
+Route::get('/histoire', function () { return view('about'); }) ->name('about');
 
 
 //STRIPE :
@@ -36,14 +36,14 @@ Route::group(['middleware' => 'auth'], function() {
 
 
 //Contact pages
-Route::get('contact', [\App\Http\Controllers\ContactController::class, 'index' ]) ->name('index');
+Route::get('contact', [\App\Http\Controllers\ContactController::class, 'index' ]) ->name('contact');
 Route::post('contact', [\App\Http\Controllers\ContactController::class, 'store' ]) ->name('store');
 
 //User profil
 Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profile' ]) ->name('profile');
 
 //search actualitys
-Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'index' ]) ->name('route.index');
+Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'index' ]) ->name('actus');
 Route::get('actus', [\App\Http\Controllers\ActualityContoller::class, 'search' ]) ->name('route.search');
 Route::get('actudetail/{id}', [\App\Http\Controllers\ActualityContoller::class, 'detail' ]) ->name('route.detail');
 

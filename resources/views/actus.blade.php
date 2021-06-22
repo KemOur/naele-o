@@ -3,15 +3,16 @@
 <h2 class="text-center">Actualités</h2>
 <div class="container">
 </div>
+@if($actus->isNotEmpty())
+
 <br>
-<h5 style="text-align: center; font-size: 2vh">Chaque semaine, des sorties et des contenus qui vous accompagnent dans vos trajets.</h5>
+<h5 style="text-align: center; font-size: 2vh">Chaque semaine des sorties et des contenus qui vous accompagnent dans vos trajets.</h5>
 <br>
 <br>
 <br>
 <div class="container">
     <div class="" style="margin-left: 5%;margin-right: 5%">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        @if($actus->isNotEmpty())
 
         @foreach ($actus as $actu)
         <div class="col">
@@ -32,9 +33,14 @@
         </div>
         @endforeach
         @else
-            <div>
-                <p> Nous n'avons pas de resultats pour cette actulités !</p>
-            </div>
+                <div    style="display: block;
+                              margin-left: auto;
+                              margin-right: auto;
+                              width: 50%;">
+                    <img src="{{asset('/imgs/Oops.png')}}" alt="oops" class="image_Oops">
+                    <H5 style="text-align: center">Quelque chose ne fonctionne pas correcement</H5>
+                    <p style="text-align: center">Veuillez vérifier votre saisie</p>
+                </div>
         @endif
     </div>
     </div>

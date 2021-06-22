@@ -1,11 +1,12 @@
 @extends('layouts.main')
 @section('content')
-    <div class="#"> <h3 style="font-family: Skia" class="text-center">Nous sommes déjà 40 000 à utiliser NAELE au quotidient</h3> </div>
+    <br>
+    <br>
+   <h3 style="font-family: Skia" class="text-center">Nous sommes déjà 40 000 à utiliser NAELE au quotidient</h3>
 
 <div class="#" style="height: 90vh">
     <img src="./imgs/2home.png" alt="image logo" class="image_logo" style="width: 100vw; height: 80vh">
 </div>
-<br>
 <br>
 <div class="container">
     <div style="height: 60vh">
@@ -44,12 +45,12 @@
                 <div class="card h-100" style="background-color: #59B0E3; border: none">
                     <hp class="text-center" style="color: white">Déjà abonné ? </hp>
                     <div class="d-grid gap-6 col-8 mx-auto card-footer">
-                        <a href="/connexion" class="btn" style="background-color: #0069A4; color: white">Je me connecte</a>
+                        <a href="/register" class="btn" style="background-color: #0069A4; color: white">Je me connecte</a>
                     </div>
                     <hr style="color: white;">
                     <p class="text-center" style="color: white">C'est votre 1er voyage avec NAELE ?</p>
                     <div class="d-grid gap-6 col-8 mx-auto card-footer">
-                        <a href="/histoire" class="btn" style="background-color: #0069A4; color: white">Je découvre</a>
+                        <a href="{{route('about')}}" class="btn" style="background-color: #0069A4; color: white">Je découvre</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@
                     Le premier Titre de transport sur mobile que vous permet de vous<br>
                     déplacer sur touts les transports électriques du quotidien
                 </p>
-                <img src="./imgs/3home.png" alt="image logo" class="image_logo" style="width: 90vw; height: 100vh">
+                <img src="{{asset('./imgs/3home.png')}}" alt="image logo" class="image_logo" style="width: 90vw; height: 100vh">
             </div>
         </div>
         <br>
@@ -74,15 +75,15 @@
 
         <br>
         <div class="#" style="">
-            <div style="height: 5vh">
-                <h5 class="text-center">LES ÉTAPES À SUIVRE POUR UTILISER LES SERVICES DE NAELE</h5>
-            </div>
+                <div style="height: 5vh">
+                    <h5 class="text-center">LES ÉTAPES À SUIVRE POUR UTILISER LES SERVICES DE NAELE</h5>
+                </div>
+                <br>
             <br>
-            <br>
-            <div class="container" style=>
+            <div class="container">
                 <div class="row align-items-md-stretch">
                     <div class="col-md-6">
-                        <div class="h-80 p-5 text-white bg-dark rounded-3" >
+                        <div class="h-80 p-3 text-white bg-dark rounded-3" >
                             <div style="margin: 10%">
                                 <h2>Change the background</h2>
                                 <ol>
@@ -96,13 +97,15 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6">
-                        <img src="./imgs/d.png" alt="image logo" class="image_logo" style="width: 100%; height: 80%">
+                        <img src="{{asset('./imgs/d.png')}}" alt="image logo" class="image_logo" style="width: 100%; height: 78%">
                     </div>
+
                 </div>
             </div>
         </div>
-        <br>
+       <br>
 
         <div>
             <div>

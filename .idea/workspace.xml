@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2785574f-4d84-4e6b-bbe6-78070d5727c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SubscriptionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Subscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/Oops.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/actus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminabonnements.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/confirmationabonnements.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plans/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/plans/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plans/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/services.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/userabonnements.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/userfactures.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -170,10 +161,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/imgs" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
-      <recent name="$PROJECT_DIR$/public/imgs" />
     </key>
   </component>
   <component name="RunManager">
@@ -238,7 +229,8 @@
       <workItem from="1624115171455" duration="843000" />
       <workItem from="1624131516918" duration="7404000" />
       <workItem from="1624203213288" duration="13037000" />
-      <workItem from="1624267087116" duration="21561000" />
+      <workItem from="1624267087116" duration="22070000" />
+      <workItem from="1624354976338" duration="5332000" />
     </task>
     <servers />
   </component>
@@ -293,10 +285,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="595" height="445" key="SwitcherDM/0.25.1440.813@0.25.1440.813" timestamp="1624197079956" />
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1624131543987">
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1624354988193">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1624131543987" />
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1624354988193" />
     <state x="312" y="156" width="816" height="550" key="find.popup" timestamp="1623932091622">
       <screen x="0" y="25" width="1440" height="813" />
     </state>

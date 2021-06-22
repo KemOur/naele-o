@@ -1,22 +1,24 @@
 <nav class="navbar navbar-expand-lg navbar-light " style="height: 70px">
     <div class="container">
 
-        <a class="navbar-brand" href="/"><img src="/imgs/NAELE.png" alt="Naele" class="image_logo"></a>
+        <a class="navbar-brand" href="/">
+            <img src="{{asset('/imgs/NAELE.png')}}" alt="image_logo" class="image_logo">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-0 mb-lg-10 bg-white ">
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/histoire">À propos</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/plans">Services NE</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/actus">Actualités</a> </li>
-                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/contact">Contact</a> </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="{{route('about')}}">À propos</a> </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="{{route('plans.index')}}">Services NE</a> </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="{{asset ('actus')}}">Actualités</a> </li>
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="{{asset ('contact')}}">Contact</a> </li>
 
             @if (auth()->check() && auth()->user()->id)
                     <li class="nav-item"> <a class="nav-link active" aria-current="page" href="/profile" style="text-decoration: underline">{{auth()->user()->name}}</a> </li>
                 @else
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/login" style="text-decoration: underline; text-underline-offset: 5px; text-decoration-color: #59B0E3; ">Me connecter</a>
+                        <a class="nav-link active" aria-current="page" href="{{asset('login')}}" style="text-decoration: underline; text-underline-offset: 5px; text-decoration-color: #59B0E3; ">Me connecter</a>
                     </li>
                 @endif
                 @if (auth()->check() && auth()->user()->is_admin == 1)
@@ -43,5 +45,7 @@
         </div>
     </div>
 </nav>
-<div class="#"> <img src="/imgs/home-image.png" alt="image logo" class="image_logo" style="width: 100vw; height: 65vh "> </div>
+<div class="#">
+
+    <img src="{{asset('/imgs/home-image.png')}}" alt="image logo" class="image_logo" style="width: 100vw; height: 65vh "> </div>
 

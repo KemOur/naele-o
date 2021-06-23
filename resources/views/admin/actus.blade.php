@@ -15,14 +15,17 @@
         @foreach ($actus as $actu)
             <div class="d-flex text-muted pt-3">
                 <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="is_on" value="1">
+                        <label class="form-check-label" for="inlineCheckbox1">publier ?</label>
+                    </div>
                     <div class="d-flex justify-content-between">
                         <ul>
                             <li><strong class="text-gray-dark">{{ $actu->title }}</strong> </li><br>
                             <li><strong class="text-gray-dark">{{ $actu->resume }}</strong> </li><br><br>
                             <li><strong class="text-gray-dark">{{ $actu->content }}</strong> </li>
                         </ul>
-                                <img src="{{asset('imgs/' . $actu->image)}}" class="card-img-top" alt="..." style="height: 50px;width: 50px">
-
+                         <img src="{{asset('imgs/' . $actu->image)}}" class="card-img-top" alt="..." style="height: 50px;width: 50px">
                         <div style="text-align: right">
                             <a href="{{route('admin.actus.edit', $actu->id )}}">Modifier</a>
                             <br>

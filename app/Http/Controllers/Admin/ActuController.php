@@ -32,7 +32,6 @@ class ActuController extends Controller
     {
         //
         return view('admin.actuForm');
-
     }
 
     /**
@@ -71,7 +70,6 @@ class ActuController extends Controller
 
         $newImageName  = time() . '-' . $request->name . '.' .
         $request ->image->extension();
-
         $request->image->move(public_path('imgs'), $newImageName);
 
         $actu = Actu::create([

@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactRequest;
+use App\Mail\ContactMe;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 
 class ApiTokenController extends Controller
@@ -44,10 +49,9 @@ class ApiTokenController extends Controller
     public function register(Request $request)
     {
         $request->validate([
-            'email' => 'required|email',
-            'name' => 'required',
-            'password' => 'required',
-            'device_name' => 'required',
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required'
         ]);
 
         $exists = User::where('email', $request->email)->exists();
@@ -56,9 +60,9 @@ class ApiTokenController extends Controller
             return response()->json(["error" => "You are already registered. Please login instead."], 409);
         }
         $user = User::create([
+            'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'name' => $request->name
         ]);
 
 
@@ -72,7 +76,7 @@ class ApiTokenController extends Controller
         ], 200);
     }
 
-    public function me(Request $request)
+    public function profile(Request $request)
     {
         return response()->json([
             "name" => $request->user()->name,
@@ -86,5 +90,36 @@ class ApiTokenController extends Controller
         $request->user()->currentAccessToken()->delete();
 
         return response()->json(null, 204);
+    }
+
+
+    public function contact(){
+        return view('contact');
+    }
+
+    public function store(ContactRequest $request)
+    {
+        $params = [
+            'firstname' => $request->get('firstname'),
+            'lastname' => $request->get('lastname'),
+            'email' => $request->get('email'),
+            'sujet' => $request->get('subject'),
+            'about' => $request->get('message'),
+
+            "subject" => "Naele.com"
+        ];
+
+        DB::table('contact')->insert([
+            'firstname' => $request['firstname'],
+            'lastname' => $request['lastname'],
+            'email' => $request['email'],
+            'subject' => $request['subject'],
+            'message' => $request['message'],
+        ]);
+
+
+        Mail::to(Config::get('contact.email'))->send(new ContactMe($params));
+        return redirect('/contact')
+            ->with('status','Votre demande à été envoyé avec succés 🤗!');
     }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Posts;
+use FontLib\Table\Type\post;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller

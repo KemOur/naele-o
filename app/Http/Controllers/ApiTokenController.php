@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
 use App\Mail\ContactMe;
+use App\Models\Actu;
+use App\Models\Plan;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
@@ -117,9 +119,20 @@ class ApiTokenController extends Controller
             'message' => $request['message'],
         ]);
 
-
         Mail::to(Config::get('contact.email'))->send(new ContactMe($params));
         return redirect('/contact')
             ->with('status','Votre demande à été envoyé avec succés 🤗!');
+    }
+
+    public function actus(){
+        $actus = Actu::all();
+        return response()->json($actus , 200);
+
+    }
+
+    public function plans(){
+        $plans = Plan::all();
+        return response()->json($plans , 200);
+
     }
 }

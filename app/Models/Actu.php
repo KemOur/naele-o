@@ -9,6 +9,9 @@ class Actu extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'resume', 'content', 'image'];
-
+    protected $fillable = [
+        'title',
+        'resume',
+        'content',
+        'image'];
 }

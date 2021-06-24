@@ -6,7 +6,7 @@ use App\Models\Posts;
 use Illuminate\Support\Facades\Route;
 
 
-//Junior->routes
+//Junior->routes NAELE app
 Route::post('register', [ApiTokenController::class, 'register']);
 Route::post('login', [ApiTokenController::class, 'login']);
 Route::middleware('auth:sanctum')->post('profile', [ApiTokenController::class, 'profile']);
@@ -14,10 +14,14 @@ Route::middleware('auth:sanctum')->post('logout', [ApiTokenController::class, 'l
 //Contacter
 Route::get('contact', [ApiTokenController::class, 'contact']);
 Route::post('contact', [ApiTokenController::class, 'store']);
+//Actualités
+Route::get('actus', [ApiTokenController::class, 'actus' ]);
+//Plans
+Route::get('plans', [ApiTokenController::class, 'plans' ]);
 
 
 
-//Authentification
+//Authentification Posts
 Route::post('auth/register', [ApiTokenController::class, 'register']);
 Route::post('auth/login', [ApiTokenController::class, 'login']);
 Route::middleware('auth:sanctum')->post('auth/me', [ApiTokenController::class, 'me']);

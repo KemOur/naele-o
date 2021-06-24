@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2785574f-4d84-4e6b-bbe6-78070d5727c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/imgs/1624394417-.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ActuController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiTokenController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiTokenController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/abonnementForm.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/abonnementList.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/aboutForm.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/aboutList.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/actus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/actus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/plans/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/plans/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Actu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Actu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +228,9 @@
       <workItem from="1624267087116" duration="22070000" />
       <workItem from="1624354976338" duration="6917000" />
       <workItem from="1624391417101" duration="6696000" />
-      <workItem from="1624450543119" duration="4628000" />
+      <workItem from="1624450543119" duration="4839000" />
+      <workItem from="1624463207225" duration="59000" />
+      <workItem from="1624521662343" duration="2610000" />
     </task>
     <servers />
   </component>
@@ -262,10 +253,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state x="482" y="28" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.813@0.25.1440.813" timestamp="1623703749527" />
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624455328185">
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1624526292986">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1624455328185" />
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.813@0.25.1440.813" timestamp="1624526292986" />
     <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1622909675864">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
@@ -294,10 +285,10 @@
       <screen x="0" y="25" width="1440" height="813" />
     </state>
     <state width="595" height="445" key="SwitcherDM/0.25.1440.813@0.25.1440.813" timestamp="1624197079956" />
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1624450550984">
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1624521665277">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1624450550984" />
+    <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.25.1440.813@0.25.1440.813" timestamp="1624521665277" />
     <state x="312" y="156" width="816" height="550" key="find.popup" timestamp="1623932091622">
       <screen x="0" y="25" width="1440" height="813" />
     </state>

@@ -25,7 +25,7 @@
                             <li><strong class="text-gray-dark">{{ $actu->resume }}</strong> </li><br><br>
                             <li><strong class="text-gray-dark">{{ $actu->content }}</strong> </li>
                         </ul>
-                         <img src="{{asset('imgs/' . $actu->image)}}" class="card-img-top" alt="..." style="height: 50px;width: 50px">
+                         <img src="{{asset($actu->img_url)}}" class="card-img-top" alt="..." style="height: 50px;width: 50px">
                         <div style="text-align: right">
                             <a href="{{route('admin.actus.edit', $actu->id )}}">Modifier</a>
                             <br>

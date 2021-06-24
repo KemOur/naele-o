@@ -16,7 +16,9 @@ class CreateActusTable extends Migration
         Schema::create('actus', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('image');
+            //$table->string('image');
+            $table->string('img_url');
+            $table->string('img_id');
             $table->text('content');
             $table->boolean('is_on')->default(true);
             $table->timestamps();

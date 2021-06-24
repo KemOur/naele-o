@@ -17,7 +17,7 @@
         @foreach ($actus as $actu)
         <div class="col">
             <div class="card">
-                <img src="{{asset('imgs/' . $actu->image)}}" class="card-img-top" alt="..." style="height: 35vh">
+                <img src="{{asset($actu->img_url)}}" class="card-img-top" alt="..." style="height: 35vh">
                 <div class="card-body">
                     <h5 class="card-title">{{ $actu->title }}</h5>
                     <p class="card-text">

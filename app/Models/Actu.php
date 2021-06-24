@@ -13,5 +13,7 @@ class Actu extends Model
         'title',
         'resume',
         'content',
-        'image'];
+        'img_url',
+        'img_id'
+    ];
 }

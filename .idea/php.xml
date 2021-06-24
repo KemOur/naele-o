@@ -117,6 +117,10 @@
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
       <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/teapot/status-code" />
+      <path value="$PROJECT_DIR$/vendor/cloudinary-labs/cloudinary-laravel" />
+      <path value="$PROJECT_DIR$/vendor/cloudinary/cloudinary_php" />
+      <path value="$PROJECT_DIR$/vendor/shrikeh/teapot" />
     </include_path>
   </component>
   <component name="PhpUnit">

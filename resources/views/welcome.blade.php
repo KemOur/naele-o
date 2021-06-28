@@ -93,9 +93,6 @@
                                     <li>Attribution d'un QR code</li>
                                     <li>Soyez le bienvenue 🥳</li>
                                 </ol>
-                                <button class="btn btn-outline-light" type="button">
-                                    <a href="{{route('plans/index')}}" class="btn" style="background-color: #0069A4; color: white">Je découvre</a>
-                                </button>
                             </div>
                         </div>
                     </div>

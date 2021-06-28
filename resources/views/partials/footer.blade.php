@@ -28,11 +28,13 @@
                 <div class="container">
                     <ul>
                         <li><h4>Forfaits :</h4></li>
-                        <li>NE- Etudiants</li>
-                        <li>NE- Plus</li>
-                        <li>NE- Libre</li>
-                        <li>NE- Max</li>
-                        <li>NE- Découvert</li>
+                        <li>NE- Etudiants-5</li>
+                        <li>NE- Week-end-10</li>
+                        <li>NE- Découvert-15</li>
+
+                        <li>NE- Trotinette-15</li>
+                        <li>NE- Vélo-15</li>
+                        <li>NE- All-25</li>
                     </ul>
                 </div>
             </div>

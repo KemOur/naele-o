@@ -16,6 +16,7 @@ Route::get('contact', [ApiTokenController::class, 'contact']);
 Route::post('contact', [ApiTokenController::class, 'store']);
 //Actualités
 Route::get('actus', [ApiTokenController::class, 'actus' ]);
+Route::get('actudetail/{id}', [ApiTokenController::class, 'detail' ]);
 //Plans
 Route::get('plans', [ApiTokenController::class, 'plans' ]);
 

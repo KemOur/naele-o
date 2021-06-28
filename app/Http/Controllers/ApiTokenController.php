@@ -127,12 +127,15 @@ class ApiTokenController extends Controller
     public function actus(){
         $actus = Actu::all();
         return response()->json($actus , 200);
+    }
 
+    public function detail($id){
+        $actu = Actu::find($id);
+        return response()->json($actu , 200);
     }
 
     public function plans(){
         $plans = Plan::all();
         return response()->json($plans , 200);
-
     }
 }

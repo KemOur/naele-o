@@ -12,7 +12,9 @@
     </div>
         <h2 class="text-center">Forfaits Navigo- Electrique</h2>
     <br>
-    <h5 style="text-align: center">Offres abonnements  </h5>
+    <h5 style="text-align: center">Nos Abonnements</h5>
+    <br>
+    <br>
     <div class="container">
     <div class="testimonials-clean" style="background-color: white;">
         <div class="container">

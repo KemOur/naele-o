@@ -43,7 +43,7 @@
             </div>
         @endforeach
         @else
-            <li>There is no news in database</li>
+            <li>Il y a pas de actualités dans la base de donné !</li>
         @endif
     </div>
 </div>

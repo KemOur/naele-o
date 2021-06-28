@@ -82,6 +82,14 @@ class ActuController extends Controller
             'img_id' => $result->getPublicId(),
         ]);
 
+
+
+
+
+
+
+
+
         return redirect('admin/actus')->with('success', 'L actualité à été àjouté avec succés');
         //return redirect(route('admin/users'));
     }

@@ -7,7 +7,7 @@
 
 <div class="container">
         <div class="col-md-6 col-lg-6 item" style="margin-left: 25%;margin-right: 25%; margin-top: 7%">
-            <form method="POST" action="/actus/store" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('admin.actus.store') }}" enctype="multipart/form-data">
                 @csrf
 
                 <x-label for="title" :value="__('Title')" />
